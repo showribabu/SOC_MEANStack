@@ -1,0 +1,39 @@
+<!-- <div>
+    <h2>Login Page</h2>
+</div> -->
+
+<div class="container col-md-4">
+
+    <div class="row justify-content-center">
+
+        <h2>Login Form</h2>
+
+        <p><span>Data from the template variable:</span> <br>{{loginFrom.value|json}}</p>
+        <p><span>Data from the Controller:</span><br>{{loginmodel|json}}</p>
+
+        <form #loginFrom="ngForm">
+
+            <div class="from-group">       
+                <label>Name:</label>
+                <input type="text" class="form-control" name="name" [(ngModel)]="loginmodel.name" />
+            </div>     
+           
+            <!-- pass -->
+            <div class="from-group">       
+                <label>password:</label>
+                <input type="password" class="form-control" name="password"  [(ngModel)]="loginmodel.password"/>
+            </div>     
+         
+
+            <div style="text-align:center">
+                <button class="btn btn-primary" type="submit"  id="but22">Login</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+

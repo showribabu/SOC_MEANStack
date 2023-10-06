@@ -1,0 +1,38 @@
+<div class="container col-md-4">
+    <div class="row justify-content-center">
+        <h2>SignUp</h2>
+
+        <p><span>From the ngModel :</span><br>{{signupForm.value | json}}</p>
+        <p><span>From the controller - signupModel: <br></span>{{signupmodel | json}}</p>
+        <form #signupForm="ngForm" >
+
+             <!-- Name -->
+             <div class="from-group">       
+                 <label>Name:</label>
+                 <input type="text" class="form-control" name="name" [(ngModel)]="signupmodel.name"/>
+             </div>     
+             <!-- Mail -->      
+             <div class="from-group">       
+                 <label>Mail:</label>
+                 <input type="mail" class="form-control" name="mail" [(ngModel)]="signupmodel.mail">       
+             </div>
+             <!-- pass -->
+             <div class="from-group">       
+                 <label>password:</label>
+                 <input type="password" class="form-control" name="password" [(ngModel)]="signupmodel.password">
+             </div>     
+             <!-- username -->
+             <div class="from-group">       
+                 <label>Username:</label>
+                 <input type="text" class="form-control" name="username" [(ngModel)]="signupmodel.username">
+                 
+             </div>
+             <div style="text-align:center">
+                <button class="btn btn-primary" type="submit"  id="but22">SignUP</button>
+            </div>
+             
+            </form>
+        
+    </div>
+
+</div>

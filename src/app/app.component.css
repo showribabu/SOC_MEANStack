@@ -24,11 +24,11 @@ img{
 
 .main-div{
 
-    /* align-items:center; */
-    /* text-align: center; */
+    align-items:center;
+    text-align: center;
     background-color: rgb(75, 221, 17);
     border-radius: 12px;
-    height:700px;
+    height:200px;
 }
 
 .team{
@@ -64,4 +64,46 @@ img{
     border-radius:18px;
 }
 
+
+/* Today - 6/10/2023... */
+/* 
+div a{
+    padding:12px;
+    text-decoration: none;
+    font-size:20px;
+    color:black;
+    background-color: red;
+    margin:20px;
+
+} */
+.main{
+    display:flex;
+    justify-content: space-around;
+    background-color: #50686d;
+}
+.nav-bar ul{
+    display: flex;
+    justify-content: space-between ;
+}
+.nav-bar ul li{
+    padding:15px 20px;
+    font-style: bold;
+    list-style: none;
+    color:white;
+}
+.nav-bar{
+    padding:20px 0;
+    /* margin-bottom:20px; */
+}
+a{
+    color:red;
+    list-style: none;
+    text-decoration: none;
+    /* font-size:20px; */
+    font-family:'Times New Roman', Times, serif;
+    padding:10px;
+    /* background-color: white; */
+
+    font-weight:bolder;
+}
 

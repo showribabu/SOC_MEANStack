@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   template: 
   
   `
-  
-  
+
     <h1>Inline Template & CSS & Test component</h1>
 
     <div>
@@ -163,7 +162,7 @@ import { Component } from '@angular/core';
 })
 export class TestComponent {
 
-Name='showri';
+Name='Showri';
 
 colorClass="sucess";
 
