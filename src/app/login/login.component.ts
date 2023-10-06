@@ -10,4 +10,9 @@ export class LoginComponent {
 
   loginmodel =new LoginModel("","");
 
+  onLogin()
+  {
+    console.log(this.loginmodel);
+  }
+
 }

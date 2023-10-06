@@ -4,7 +4,7 @@
 
         <p><span>From the ngModel :</span><br>{{signupForm.value | json}}</p>
         <p><span>From the controller - signupModel: <br></span>{{signupmodel | json}}</p>
-        <form #signupForm="ngForm" >
+        <form #signupForm="ngForm" (ngSubmit)="onSignup()">
 
              <!-- Name -->
              <div class="from-group">       

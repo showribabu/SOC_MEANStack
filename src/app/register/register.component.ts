@@ -12,4 +12,10 @@ export class RegisterComponent {
   // data from the form will be come....
 
   signupmodel =new SignupModel("", "", "","");
+
+
+  onSignup()
+  {
+    console.log(this.signupmodel);
+  }
 }
