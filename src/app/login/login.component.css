@@ -1,7 +1,7 @@
 .row{
     margin-top:20px;
-    /* background-color:rgb(131, 249, 57) ; */
-    background-color: rgb(225, 141, 249);
+    background-color:rgb(131, 249, 57) ;
+    /* background-color: rgb(225, 141, 249); */
     box-shadow:3px 3px 3px rgb(83, 80, 80);
     border-radius:12px;
     border-top:2px solid blue;
