@@ -17,3 +17,13 @@
     align-items:center;
     font-weight:bolder;
 }
+.ot{
+    align-items: center;
+    text-align: center;
+    color:red;
+    /* background-color:#fff; */
+    /* margin:20px; */
+    padding:12px;
+
+
+}

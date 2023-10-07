@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 // forms module...
 
 
-
 import { FormsModule } from '@angular/forms';
 
+
+import {HttpClientModule} from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -32,8 +34,12 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule,
     // ..............................................
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
     //...............................................
+
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

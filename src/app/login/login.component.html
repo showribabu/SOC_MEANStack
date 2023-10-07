@@ -14,8 +14,8 @@
         <form #loginFrom="ngForm" (ngSubmit)="onLogin()">
 
             <div class="from-group" >       
-                <label>Name:</label>
-                <input type="text" class="form-control" name="name" [(ngModel)]="loginmodel.name" />
+                <label>UserName:</label>
+                <input type="text" class="form-control" name="username" [(ngModel)]="loginmodel.username" />
             </div>     
            
             <!-- pass -->
@@ -25,13 +25,16 @@
             </div>     
          
 
-            <div style="text-align:center">
+            <div style="text-align:center;margin-top:10px;">
                 <button class="btn btn-primary" type="submit"  id="but22">Login</button>
             </div>
 
 
         </form>
 
+        <div class="ot">
+            <span >{{response.message}}</span>
+        </div>
     </div>
 
 </div>

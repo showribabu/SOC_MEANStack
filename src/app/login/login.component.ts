@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginModel } from '../login-model';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -10,9 +11,18 @@ export class LoginComponent {
 
   loginmodel =new LoginModel("","");
 
+  constructor(private _authService:AuthenticationService){}
+
+
+  response:any;
   onLogin()
   {
-    console.log(this.loginmodel);
+    // console.log(this.loginmodel);
+    this._authService.login(this.loginmodel).subscribe(
+      (data)=>{
+        this.response=data;
+      }
+    )
   }
 
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SignupModel } from '../signup-model';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-register',
@@ -13,9 +14,20 @@ export class RegisterComponent {
 
   signupmodel =new SignupModel("", "", "","");
 
+//constructor...
+constructor(private _authservice:AuthenticationService){}
 
+
+
+response:any;
+  
   onSignup()
   {
-    console.log(this.signupmodel);
-  }
+    // console.log(this.signupmodel);
+    this._authservice.register(this.signupmodel).subscribe(
+
+    (data)=>{
+      this.response=data;
+    }
+    )}
 }

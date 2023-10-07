@@ -8,8 +8,8 @@
 
              <!-- Name -->
              <div class="from-group">       
-                 <label>Name:</label>
-                 <input type="text" class="form-control" name="name" [(ngModel)]="signupmodel.name"/>
+                 <label>User Name:</label>
+                 <input type="text" class="form-control" name="username" [(ngModel)]="signupmodel.username"/>
              </div>     
              <!-- Mail -->      
              <div class="from-group">       
@@ -23,14 +23,19 @@
              </div>     
              <!-- username -->
              <div class="from-group">       
-                 <label>Username:</label>
-                 <input type="text" class="form-control" name="username" [(ngModel)]="signupmodel.username">  
+                 <label>Name:</label>
+                 <input type="text" class="form-control" name="name" [(ngModel)]="signupmodel.name">  
              </div>
-             <div style="text-align:center">
+             <div style="text-align:center;margin-top:10px;">
                 <button class="btn btn-primary" type="submit"  id="but22">SignUP</button>
-            </div>
-             
+            </div>         
             </form>
+
+            <div class="ot">
+                <span >{{response.message}}</span>
+    
+            </div>
+
         
     </div>
 
