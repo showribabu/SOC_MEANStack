@@ -10,6 +10,11 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
 
+//Activity 24... Cookie service...
+
+import { CookieService } from 'ngx-cookie-service';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ShowriComponent } from './showri/showri.component';
@@ -18,6 +23,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -28,7 +34,8 @@ import { LoginComponent } from './login/login.component';
     AboutUsComponent,
     ContactusComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +48,7 @@ import { LoginComponent } from './login/login.component';
 
    
   ],
-  providers: [],
+  providers: [CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
