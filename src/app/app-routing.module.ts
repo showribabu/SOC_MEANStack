@@ -5,6 +5,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 const routes: Routes = [
 
@@ -12,8 +13,8 @@ const routes: Routes = [
   {path:'contactus',component:ContactusComponent},
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent}
-
+  {path:'dashboard',component:DashboardComponent},
+  {path:'file-upload',component:FileUploadComponent}
 
 ];
 

@@ -24,6 +24,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ContactusComponent,
     RegisterComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
